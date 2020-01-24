@@ -1,0 +1,10 @@
+C:\Users\MCA\source\repos\PROJECT Asciify\bin\Debug\PROJECT Asciify.exe.config
+C:\Users\MCA\source\repos\PROJECT Asciify\bin\Debug\PROJECT Asciify.exe
+C:\Users\MCA\source\repos\PROJECT Asciify\bin\Debug\PROJECT Asciify.pdb
+C:\Users\MCA\source\repos\PROJECT Asciify\obj\Debug\PROJECT Asciify.csprojAssemblyReference.cache
+C:\Users\MCA\source\repos\PROJECT Asciify\obj\Debug\PROJECT_Asciify.Form1.resources
+C:\Users\MCA\source\repos\PROJECT Asciify\obj\Debug\PROJECT_Asciify.Properties.Resources.resources
+C:\Users\MCA\source\repos\PROJECT Asciify\obj\Debug\PROJECT Asciify.csproj.GenerateResource.cache
+C:\Users\MCA\source\repos\PROJECT Asciify\obj\Debug\PROJECT Asciify.csproj.CoreCompileInputs.cache
+C:\Users\MCA\source\repos\PROJECT Asciify\obj\Debug\PROJECT Asciify.exe
+C:\Users\MCA\source\repos\PROJECT Asciify\obj\Debug\PROJECT Asciify.pdb
