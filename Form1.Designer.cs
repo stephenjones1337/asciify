@@ -37,8 +37,8 @@
             // 
             // btnGenerate
             // 
-            this.btnGenerate.Location = new System.Drawing.Point(6, 429);
-            this.btnGenerate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGenerate.Location = new System.Drawing.Point(6, 551);
+            this.btnGenerate.Margin = new System.Windows.Forms.Padding(2);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(78, 29);
             this.btnGenerate.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             this.picBox.Image = ((System.Drawing.Image)(resources.GetObject("picBox.Image")));
             this.picBox.Location = new System.Drawing.Point(6, 30);
-            this.picBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.picBox.Margin = new System.Windows.Forms.Padding(2);
             this.picBox.Name = "picBox";
             this.picBox.Size = new System.Drawing.Size(350, 219);
             this.picBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -64,7 +64,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(688, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1087, 24);
             this.menuStrip1.TabIndex = 2;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -93,24 +93,24 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(388, 30);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Location = new System.Drawing.Point(474, 30);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(276, 380);
+            this.textBox1.Size = new System.Drawing.Size(602, 550);
             this.textBox1.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(688, 469);
+            this.ClientSize = new System.Drawing.Size(1087, 591);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.picBox);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.picBox)).EndInit();

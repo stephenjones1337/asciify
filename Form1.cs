@@ -30,12 +30,13 @@ namespace PROJECT_Asciify {
 
         private void SaveBitmapToolStripMenuItem_Click(object sender, EventArgs e) {
             //save newly generated image as a jpeg
+            BitmapAscii bitmapAscii = new BitmapAscii();
         }
         #endregion
         #region METHODS
-        private void Asciify() {
-            //main function
-        }
+        
         #endregion
+
+        
     }
 }
