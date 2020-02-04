@@ -26,9 +26,12 @@ namespace PROJECT_Asciify {
             string stringImg = "";
             double num;
 
+            //advance by kernel amount
             for (imgY = 0; imgY < img.Height; imgY+=kerY) {
                 for (imgX = 0; imgX < img.Width; imgX+=kerX) {
+                    //normalized avg of the kernel
                     num = Kernel(img);
+                    //add char we get from num to string
                     stringImg += GrayToString(num);
                 }
                 stringImg += '\n';
@@ -47,14 +50,13 @@ namespace PROJECT_Asciify {
             }
             return asciiValues[val];
         }
-        public string Test(Bitmap img) {
-            string result = "";
+        //public string Test(Bitmap img) {
+        //    string result = "";
 
 
-            return result;
-        }
+        //    return result;
+        //}
         private double Kernel(Bitmap img) {
-            //average the found  1x/2y
             double num   = 0.0;
             double count = 0.0;
 
@@ -68,10 +70,12 @@ namespace PROJECT_Asciify {
             //set x/y to last used x/y of the img
             for (int y = imgY; y < kerY+imgY; y++) {
                 for (int x = imgX; x < kerX+imgX; x++) {
+                    //avg the color and normalize that value (0-1)
                     num += AvgPixel(img.GetPixel(x,y));
                     count++;
                 }
             }
+            //return the overall avg
             return num/count;
         }
         private double AvgPixel(int r, int g, int b) {
