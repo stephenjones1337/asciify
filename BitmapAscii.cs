@@ -21,6 +21,7 @@ namespace PROJECT_Asciify {
             kerY = y;
         }
         #region METHODS
+        // change kernel: pass width and a height rather than the img
         public string Asciify(Bitmap img) {
             //main function
             string stringImg = "";
@@ -34,11 +35,12 @@ namespace PROJECT_Asciify {
                     //add char we get from num to string
                     stringImg += GrayToString(num);
                 }
-                stringImg += '\n';
+                stringImg += "\r\n";
             }        
             return stringImg;
         }
         #region PRIVATE
+        #region TOSTRINGS
         private string GrayToString(double num) {
             //
             int val = (int)Math.Round(num*10);
@@ -50,12 +52,8 @@ namespace PROJECT_Asciify {
             }
             return asciiValues[val];
         }
-        //public string Test(Bitmap img) {
-        //    string result = "";
-
-
-        //    return result;
-        //}
+        #endregion
+        #region KERNEL
         private double Kernel(Bitmap img) {
             double num   = 0.0;
             double count = 0.0;
@@ -78,6 +76,8 @@ namespace PROJECT_Asciify {
             //return the overall avg
             return num/count;
         }
+        #endregion
+        #region AVERAGE AND NORMALIZE
         private double AvgPixel(int r, int g, int b) {
             // R * 0.21     G * 0.72       B * 0.07
             double avg = (r*0.21)+(g*0.72)+(b*0.07);
@@ -101,6 +101,7 @@ namespace PROJECT_Asciify {
             //but then why not just divide by 255?
             return num/255;
         }
+        #endregion
         #endregion
         #endregion
     }
